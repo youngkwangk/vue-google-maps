@@ -89,6 +89,8 @@ export const load = (apiKey, version, libraries, loadCn) => {
       url = url + '&v=' + version;
     }
 
+    url = url + '&libraries=geometry';
+
     googleMapScript.setAttribute('src', url);
     googleMapScript.setAttribute('async', '');
     googleMapScript.setAttribute('defer', '');
