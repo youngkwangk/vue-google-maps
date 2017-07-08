@@ -107,6 +107,8 @@ var load = exports.load = function load(apiKey, version, libraries, loadCn) {
     if (version) {
       url = url + '&v=' + version;
     }
+    
+    url = url + '&libraries=geometry';
 
     googleMapScript.setAttribute('src', url);
     googleMapScript.setAttribute('async', '');
